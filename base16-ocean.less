@@ -1,0 +1,137 @@
+/*! @see https://github.com/chriskempson/base16/blob/master/scheme-previews/base16-ocean.svg */
+@base00:#2b303b;/* background */
+@base01:#343d46;/* active background */
+@base02:#4f5b66;/* line number,  selection*/
+@base03:#65737e;/* comment, matchingbracket bkg */
+@base04:#a7adba;/* cursor */
+@base05:#c0c5ce;/* color */
+@base06:#dfe1e8;
+@base07:#eff1f5;/*matchingbracket color*/
+
+@base08:#bf616a;/* variables non declarees, attributes */
+@base09:#d08770;/* number */
+@base0A:#ebcb8b;/* variables declarees */
+@base0B:#a3be8c;/* string */
+@base0C:#96b5b4;/* regexp */
+@base0D:#8fa1b3;/* qualifier */
+@base0E:#b48ead;/* return, function, var... */
+@base0F:#ab7967;/* link, hexa color */
+
+@white:#FFFFFF;
+@error:#ff0076; /* error */
+@cssid:#FF6500;
+
+/* @see http://www.google.fr */
+/* SWATCHES ---------------------------------------------------------------------- */
+
+span.cm-attribute    { color: @base08; }
+span.cm-builtin     { color: @cssid; }
+span.cm-def            { color: @base0D; }
+span.cm-header      { color: #FF6500; }
+span.cm-qualifier    { color: @base0D; }
+span.cm-variable    { color: @base08; }
+
+span.cm-atom        { color: @base0B; }
+span.cm-link        { color: @base0F; }
+span.cm-string        { color: @base0B; }
+
+span.cm-property    { color: @base0C; }
+span.cm-tag            { color: @base0C; }
+
+span.cm-variable-2    { color: @base0A; }
+span.cm-variable-3    { color: #FF6500; }
+
+span.cm-comment        { color: @base03; }
+span.cm-error        { color: @error; }
+span.cm-keyword        { color: @base0E; }
+span.cm-operator    { color: @base05; }
+
+span.cm-number        { color: @base09; }
+span.cm-string-2    { color: @base0C; }
+
+span.cm-meta        { color: @base0D; }
+span.cm-bracket        { color: @base0C; }
+
+/*
+.statusbar{
+    &,
+    & .info,
+    & .indicators{
+        color:#FF6500 !important;
+        background:#FF6500 !important;
+    }
+}
+*/
+
+/* MISC ---------------------------------------------------------------------- */
+
+.CodeMirror,
+.CodeMirror .CodeMirror-scroll {
+    color: @base05;
+    background: @base00;
+}
+
+.CodeMirror-cursor {
+    border-left: 2px solid @base07 !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #FF6500 !important;
+}
+
+.CodeMirror-gutters {
+    border-right: 0;
+    background: @base00;
+}
+
+.CodeMirror-linenumber {
+    color: @base02;
+}
+
+.CodeMirror-selected {
+    background: @base02 !important;
+}
+
+/* Matching */
+
+.CodeMirror-matchingbracket {
+    color: @base09 !important;
+    border-bottom: 0 !important;
+    background: @base01 !important;
+}
+
+.CodeMirror-matchingtag {
+    color:@base09 !important;
+    border-bottom: 0 !important;
+    background: @base01 !important;
+}
+
+/* Active Line */
+
+.CodeMirror-focused{
+    .CodeMirror-activeline
+    {
+        .CodeMirror-nonmatchingbracket {
+            color: @error !important;
+        }
+        .CodeMirror-gutter-elt {
+            color: @white;
+            background-color: @base03 !important;
+        }
+        .inline-widget .CodeMirror-gutter-elt {
+            color: @white;
+        }
+    }
+}
+
+.CodeMirror-activeline-background {
+    background: @base01 !important;
+}
+
+.CodeMirror-searching
+{
+    background:@base02 !important;
+}
+
+/* STATUS BAR  ---------------------------------------------------------------------- */

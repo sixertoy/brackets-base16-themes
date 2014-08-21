@@ -1,0 +1,14 @@
+{
+    "name": "base16-ocean-theme",
+    "title": "Base16 Ocean Theme",
+    "description": "Base16 Ocean theme for brackets",
+    "homepage": "https://github.com/malas34/base16-ocean",
+    "version": "1.0.0",
+    "author": "malas34 <malas34.github@gmail.com> ",
+    "license": "MIT",
+    "theme": {
+        "file": "base16-ocean.css",
+        "dark": true
+    },
+    "keywords": ["theme","base16","ocean"]
+}
