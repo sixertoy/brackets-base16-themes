@@ -1,0 +1,14 @@
+{
+    "name": "base16-eighties-theme",
+    "title": "Base16 Eighties Theme",
+    "description": "Base16 Eighties theme for brackets",
+    "homepage": "https://github.com/malas34/base16-eighties",
+    "version": "1.0.0",
+    "author": "malas34 <malas34.github@gmail.com> ",
+    "license": "MIT",
+    "theme": {
+        "file": "base16-eighties.css",
+        "dark": true
+    },
+    "keywords": ["theme","base16","eighties"]
+}
