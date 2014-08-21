@@ -1,0 +1,124 @@
+/*! @see https://github.com/chriskempson/base16/blob/master/scheme-previews/base16-paraiso.svg */
+@base00:#2f1e2e;/* background */
+@base01:#41323f;/* active background */
+@base02:#4f424c;/* line number,  selection*/
+@base03:#776e71;/* comment, matchingbracket bkg */
+@base04:#8d8687;/* cursor */
+@base05:#a39e9b;/* color */
+@base06:#b9b6b0;
+@base07:#e7e9db;/*matchingbracket color*/
+
+@base08:#ef6155;/* variables non declarees, attributes */
+@base09:#f99b15;/* number */
+@base0A:#fec418;/* variables declarees */
+@base0B:#48b685;/* string */
+@base0C:#5bc4bf;/* regexp */
+@base0D:#06b6ef;/* qualifier */
+@base0E:#815ba4;/* return, function, var... */
+@base0F:#e96ba8;/* link, hexa color */
+
+@white:#FFFFFF;
+@error:#ff0076; /* error */
+
+/* @see http://www.google.fr */
+/* SWATCHES ---------------------------------------------------------------------- */
+
+span.cm-attribute    { color: @base08; }
+span.cm-builtin     { color: #FF6500; }
+span.cm-def            { color: @base0D; }
+span.cm-header      { color: #FF6500; }
+span.cm-qualifier    { color: @base0D; }
+span.cm-variable    { color: @base08; }
+
+span.cm-atom        { color: @base0B; }
+span.cm-link        { color: @base0F; }
+span.cm-string        { color: @base0B; }
+
+span.cm-property    { color: @base0C; }
+span.cm-tag            { color: @base0C; }
+
+span.cm-variable-2    { color: @base0A; }
+span.cm-variable-3    { color: #FF6500; }
+
+span.cm-comment        { color: @base03; }
+span.cm-error        { color: @error; }
+span.cm-keyword        { color: @base0E; }
+span.cm-operator    { color: @base05; }
+
+span.cm-number        { color: @base09; }
+span.cm-string-2    { color: @base0C; }
+
+span.cm-meta        { color: @base0D; }
+span.cm-bracket        { color: @base0C; }
+
+
+/* MISC ---------------------------------------------------------------------- */
+
+.CodeMirror,
+.CodeMirror .CodeMirror-scroll {
+    color: @base05;
+    background: @base00;
+}
+
+.CodeMirror-cursor {
+    border-left: 2px solid @base07 !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #FF6500 !important;
+}
+
+.CodeMirror-gutters {
+    border-right: 0;
+    background: @base00;
+}
+
+.CodeMirror-linenumber {
+    color: @base02;
+}
+
+.CodeMirror-selected {
+    background: @base02 !important;
+}
+
+/* Matching */
+
+.CodeMirror-matchingbracket {
+    color: @base09 !important;
+    border-bottom: 0 !important;
+    background: @base01 !important;
+}
+
+.CodeMirror-matchingtag {
+    color:@base09 !important;
+    border-bottom: 0 !important;
+    background: @base01 !important;
+}
+
+/* Active Line */
+
+.CodeMirror-focused{
+    .CodeMirror-activeline
+    {
+        .CodeMirror-nonmatchingbracket {
+            color: @error !important;
+        }
+        .CodeMirror-gutter-elt {
+            color: @white;
+            background-color: @base03 !important;
+        }
+        .inline-widget .CodeMirror-gutter-elt {
+            color: @white;
+        }
+    }
+}
+
+.CodeMirror-activeline-background {
+    background: @base01 !important;
+}
+
+.CodeMirror-searching
+{
+    background:@base02 !important;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "base16-mocha-theme",
+    "title": "Base16 mocha Theme",
+    "description": "Base16 Ocean theme for brackets",
+    "homepage": "https://github.com/malas34/base16-mocha",
+    "version": "1.0.0",
+    "author": "malas34 <malas34.github@gmail.com> ",
+    "license": "MIT",
+    "theme": {
+        "file": "base16-mocha.css",
+        "dark": true
+    },
+    "keywords": ["theme","base16","mocha"]
+}
