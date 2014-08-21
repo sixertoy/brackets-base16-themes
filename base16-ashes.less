@@ -1,0 +1,124 @@
+/*! @see https://github.com/chriskempson/base16/blob/master/scheme-previews/base16-paraiso.svg */
+@base00:#1C2023;/* background */
+@base01:#393F45;/* active background */
+@base02:#565E65;/* line number,  selection*/
+@base03:#747C84;/* comment, matchingbracket bkg */
+@base04:#ADB3BA;/* cursor */
+@base05:#C7CCD1;/* color */
+@base06:#DFE2E5;
+@base07:#F3F4F5;/*matchingbracket color*/
+
+@base08:#C7AE95;/* variables non declarees, attributes */
+@base09:#C7C795;/* number */
+@base0A:#AEC795;/* variables declarees */
+@base0B:#95C7AE;/* string */
+@base0C:#95AEC7;/* regexp */
+@base0D:#AE95C7;/* qualifier */
+@base0E:#C795AE;/* return, function, var... */
+@base0F:#C79595;/* link, hexa color */
+
+@white:#FFFFFF;
+@error:#ff0076; /* error */
+
+/* @see http://www.google.fr */
+/* SWATCHES ---------------------------------------------------------------------- */
+
+span.cm-attribute    { color: @base08; }
+span.cm-builtin     { color: #FF6500; }
+span.cm-def            { color: @base0D; }
+span.cm-header      { color: #FF6500; }
+span.cm-qualifier    { color: @base0D; }
+span.cm-variable    { color: @base08; }
+
+span.cm-atom        { color: @base0B; }
+span.cm-link        { color: @base0F; }
+span.cm-string        { color: @base0B; }
+
+span.cm-property    { color: @base0C; }
+span.cm-tag            { color: @base0C; }
+
+span.cm-variable-2    { color: @base0A; }
+span.cm-variable-3    { color: #FF6500; }
+
+span.cm-comment        { color: @base03; }
+span.cm-error        { color: @error; }
+span.cm-keyword        { color: @base0E; }
+span.cm-operator    { color: @base05; }
+
+span.cm-number        { color: @base09; }
+span.cm-string-2    { color: @base0C; }
+
+span.cm-meta        { color: @base0D; }
+span.cm-bracket        { color: @base0C; }
+
+
+/* MISC ---------------------------------------------------------------------- */
+
+.CodeMirror,
+.CodeMirror .CodeMirror-scroll {
+    color: @base05;
+    background: @base00;
+}
+
+.CodeMirror-cursor {
+    border-left: 2px solid @base07 !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #FF6500 !important;
+}
+
+.CodeMirror-gutters {
+    border-right: 0;
+    background: @base00;
+}
+
+.CodeMirror-linenumber {
+    color: @base02;
+}
+
+.CodeMirror-selected {
+    background: @base02 !important;
+}
+
+/* Matching */
+
+.CodeMirror-matchingbracket {
+    color: @base09 !important;
+    border-bottom: 0 !important;
+    background: @base01 !important;
+}
+
+.CodeMirror-matchingtag {
+    color:@base09 !important;
+    border-bottom: 0 !important;
+    background: @base01 !important;
+}
+
+/* Active Line */
+
+.CodeMirror-focused{
+    .CodeMirror-activeline
+    {
+        .CodeMirror-nonmatchingbracket {
+            color: @error !important;
+        }
+        .CodeMirror-gutter-elt {
+            color: @white;
+            background-color: @base03 !important;
+        }
+        .inline-widget .CodeMirror-gutter-elt {
+            color: @white;
+        }
+    }
+}
+
+.CodeMirror-activeline-background {
+    background: @base01 !important;
+}
+
+.CodeMirror-searching
+{
+    background:@base02 !important;
+}
