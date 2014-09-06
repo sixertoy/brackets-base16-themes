@@ -142,4 +142,8 @@ span.cm-bracket {
 .CodeMirror-searching {
   background: #4f5b66 !important;
 }
+.CodeMirror-searching.searching-current-match {
+  color: #FFF;
+  background: #f7c44e !important;
+}
 /* STATUS BAR  ---------------------------------------------------------------------- */

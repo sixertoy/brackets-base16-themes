@@ -20,6 +20,7 @@
 @white:#FFFFFF;
 @error:#ff0076; /* error */
 @cssid:#FF6500;
+@yellow:#f7c44e;
 
 /* @see http://www.google.fr */
 /* SWATCHES ---------------------------------------------------------------------- */
@@ -132,6 +133,10 @@ span.cm-bracket        { color: @base0C; }
 .CodeMirror-searching
 {
     background:@base02 !important;
+    &.searching-current-match{
+        color:#FFF;
+        background:@yellow !important;
+    }
 }
 
 /* STATUS BAR  ---------------------------------------------------------------------- */
