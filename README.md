@@ -1,4 +1,4 @@
-Darks Soda Theme for Brackets
+Base16 Ocean Theme for Brackets
 =========
 
 For more themes and install instructions see the [Brackets Themes website](http://brackets-themes.github.io/)
